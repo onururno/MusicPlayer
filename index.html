@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="nav-lofi.css">
+    <link rel="stylesheet" href="nav-anime.css">
+    <link rel="stylesheet" href="nav-thinkful.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <title>Music Player</title>
+</head>
+<body>
+
+    <!-- <div class="nav-container " id="nav-container">
+        <ul id="nav-songs">
+           
+        </ul>
+    </div> -->
+
+    <div class="nav-container " id="nav-container">
+        <div class="nav-lofi" id="nav-lofi">Lofi</div>
+        <div class="nav-anime" id="nav-anime">Motivation</div>
+        <div class="nav-thinkful" id="nav-thinkful">Thinkful</div>
+    </div>
+
+    <div class="nav-lofi-container out" id="nav-lofi-container">
+        <div class="back-nav" id="back-lofi-nav">
+            <i class="fas fa-backward"></i>
+        </div>
+        <h2>Lofi</h2>
+        <ul id="nav-lofi-songs">
+           
+        </ul>
+    </div>
+
+    <div class="nav-anime-container out" id="nav-anime-container">
+        <div class="back-nav" id="back-anime-nav">
+            <i class="fas fa-backward"></i>
+        </div>
+        <h2>Anime</h2>
+        <ul id="nav-anime-songs">
+           
+        </ul>
+    </div>
+
+    <div class="nav-thinkful-container out" id="nav-thinkful-container">
+        <div class="back-nav" id="back-thinkful-nav">
+            <i class="fas fa-backward"></i>
+        </div>
+        <h2>Thinkful</h2>
+        <ul id="nav-thinkful-songs">
+           
+        </ul>
+    </div>
+
+<div class="music-big-container">
+    <h1>Music Player</h1>
+    <div class="music-container" id="music-container">
+        <div class="music-info">
+            <h4 id="title"></h4>
+            <div class="progress-container" id="progress-container">
+                <div class="progress" id="progress"></div>
+            </div>
+        </div>
+
+        <audio src="music/ukulele.mp3" id="audio"></audio>
+
+        <div class="img-container">
+            <img src="images/ukulele.jpg" alt="music cover" id="cover">
+        </div>    
+        <div class="navigation">
+            <button id="prev" class="action-btn">
+                <i class="fas fa-backward"></i>
+            </button>
+            <button id="play" class="action-btn action-btn-big">
+                <i class="fas fa-play"></i>
+            </button>
+            <button id="next" class="action-btn">
+                <i class="fas fa-forward"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
