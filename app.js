@@ -29,7 +29,7 @@ const backThinkfulNav = document.getElementById("back-thinkful-nav");
 
 // sing titles
 
-const lofiSongs = ["hey", "summer", "ukulele", "sayso"];
+const lofiSongs = ["aruarian dance", "counting stars", "lady brown"];
 const animeSongs = ["hey", "summer", "sayso", "ukulele"];
 const thinkfulSongs = ["hey", "sayso", "summer", "ukulele"];
 let songs = lofiSongs;
