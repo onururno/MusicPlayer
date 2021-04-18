@@ -45,6 +45,7 @@ function createEl(songs, navSongs){
         let textnode = document.createTextNode(songs[i]);
         El.appendChild(textnode);
         navSongs.appendChild(El);
+        El.classList.add(i);
 }}
 
 createEl(lofiSongs, navLofiSongs);
@@ -62,6 +63,7 @@ function navPlay(links){
     links.forEach(link => {
         link.addEventListener("click", () =>{
             loadSong(link.innerHTML);
+            songIndex = link.className;
             playSong();
         })
 })};
@@ -158,8 +160,6 @@ playBtn.addEventListener("click", () => {
     }
 })
 
-
-
 // Change song
 // prevBtn.addEventListener("click", prevSong.bind(prevBtn.id),false);
 prevBtn.addEventListener("click", prevSong);
@@ -176,19 +176,19 @@ progressContainer.addEventListener("click", setProgress);
 navLofi.addEventListener("click", () =>{
     navLofiContainer.classList.toggle("out");
     songs = lofiSongs;
-    console.log(songs);
+    
 })
 
 navAnime.addEventListener("click", () =>{
     navAnimeContainer.classList.toggle("out");
     songs = animeSongs;
-    console.log(songs);
+    
 })
 
 navThinkful.addEventListener("click", () =>{
     navThinkfulContainer.classList.toggle("out");
     songs = thinkfulSongs;
-    console.log(songs);
+    
 })
 
 backLofiNav.addEventListener("click", () =>{
